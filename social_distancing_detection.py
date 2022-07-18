@@ -47,7 +47,7 @@ def detect_people(frame, net, ln, personIdx=0):
 				(centerX, centerY, width, height) = box.astype("int")
 
 				# use the center (x, y)-coordinates to derive the top
-				# and and left corner of the bounding box
+				# and left corner of the bounding box
 				x = int(centerX - (width / 2))
 				y = int(centerY - (height / 2))
 
